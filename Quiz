@@ -5,3 +5,6 @@ for number in range(101):
         else:
                 print(number)
 
+List = ["RED", "BLUE", "GREEN", "YELLOW"]
+for color in List:
+        print(color)
