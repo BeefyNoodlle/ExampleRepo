@@ -1,0 +1,18 @@
+Rank = []
+Firstname = []
+Lastname = []
+
+with open("girl_boy_names_2004.csv","r") as names_csv:
+    lines = names_csv.readlines()
+
+    for i in lines:
+        new_lists = i.split(",")
+        Rank.append(new_lists[0])
+        Firstname.append(new_lists[1])
+        Lastname.append(new_lists[2])
+
+for i in range(len(Firstname)):
+    print("---------------------------")
+    print("Rank: " + Rank[i])
+    print("Girl Name: " + Firstname[i])
+    print("Boy Name: " + Lastname[i])
