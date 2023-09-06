@@ -1,0 +1,30 @@
+CountryName = []
+CountryCode = []
+
+#def x():
+#    y = input("Pick a number ")
+#    return y 
+
+def Read_Csv(x):
+    with open(x,"r") as names_csv:
+        lines = names_csv.readlines()
+        return lines
+
+def Parse_Csv(x):
+    for i in x:
+        new_lists = i.split(",")
+        CountryName.append(new_lists[0])
+        CountryCode.append(new_lists[1])
+
+
+
+
+def print_csv():
+    for i in range(len(CountryName)):
+        print("---------------------------")
+        print("CountryName: " + CountryName[i])
+        print("CountryCode: " + CountryCode[i])
+
+y = Read_Csv("data.csv")
+Parse_Csv(y)
+print_csv()
