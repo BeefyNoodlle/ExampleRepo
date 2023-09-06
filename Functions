@@ -1,0 +1,44 @@
+
+def x():
+    y = input("Pick a number ")
+    return y 
+#This function states we will ask for a number 
+def z(c):
+    print(c)
+#This will print what ever is c 
+def Q(j,k):
+    p = int(j) + int(k)
+    print(p)
+
+def V(x,y,z):
+    b = int(x) * int(y) * int(z)
+    return(b)
+############################################
+def determine(g,o):
+    if (int(g) > int(o)):
+        print("TEST2")
+    elif(int(o) > int(g)):
+        print("Test1")
+#################################3333
+    
+    
+
+a = x()
+
+z(a)
+#Ties it back a calls on function x saying a is equal to the function 
+#x it then inputs x with z in what ever you get from x and prints it!
+
+W = x()
+S = x()
+
+Q(W,S)
+
+multi = V(x(),x(),x())
+z(multi)
+
+############################################3
+WWW = x()
+S2 = x()
+
+determine(WWW,S2)
